@@ -1,0 +1,18 @@
+html {
+	scroll-behavior: smooth;
+}
+
+a.navbar-item {
+  color: #fff!important;
+}
+
+#home {
+  background-color: #F57B71;
+}
+
+.hero.is-link a.navbar-item:hover, .hero.is-link a.navbar-item.is-active,
+.hero.is-link .navbar-link:hover,
+.hero.is-link .navbar-link.is-active {
+  background-color: #F15A5A!important;
+  color: #fff;
+}

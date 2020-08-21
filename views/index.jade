@@ -1,0 +1,123 @@
+extends layout
+
+block content
+    section.hero.is-link.is-fullheight#home
+      // Hero head: will stick at the top
+      .hero-head
+        header.navbar
+          .container
+            #navbarMenuHeroC.navbar-menu
+              .navbar-end
+                a(href='#home').navbar-item
+                  | Home 🏠
+                a(href='#skills').navbar-item
+                  | Skills 🤹
+                a(href='#portfolio').navbar-item
+                  | Portfolio 📝
+                a(href='#about').navbar-item
+                  | About 🤓
+                a(href='#contact').navbar-item
+                    | Contact ✉️
+      // Hero content: will be in the middle
+      .hero-body
+        .container.has-text-centered
+          h1.title
+            | Ryan Shillingford
+          h2.subtitle
+            | Front End Developer
+            br
+            🌎 Charlotte, NC
+
+    section.hero.is-medium.is-warning#skills
+      .hero-body
+        .container
+          h1.title
+            | Skills 🤖
+          h4.title.is-4 Languages
+          h3.subtitle
+            | Python,
+            | JavaScript (ES6),
+            | C#,
+            | Powershell
+            | HTML,
+            | CSS,
+            | SASS,
+            | Pug/Jade,
+            | Jinja2
+          h4.title.is-4 Frameworks
+          h3.subtitle
+            | ExpressJS,
+            | Flask,
+            | Svelte,
+            | Bootstrap,
+            | Bulma
+
+    section.hero.is-medium#portfolio
+      .hero-body
+        .container
+          h1.title
+            | Portfolio 🖼️
+          .columns
+            .column
+              .card
+                .card-image
+                  figure.image.is-4by3
+                    img(src='https://files.catbox.moe/o81cxn.png' alt='Placeholder image')
+                .card-content
+                  .media
+                    .media-content
+                      p.title.is-4 Experience Tracker
+                      p.subtitle.is-6 ExpressJs, HTML, SASS
+            .column
+              .card
+                .card-image
+                  figure.image.is-4by3
+                    img(src='https://files.catbox.moe/k9t1x0.png' alt='Placeholder image')
+                .card-content
+                  .media
+                    .media-content
+                      p.title.is-4 Photo Sharing App
+                      p.subtitle.is-6 Flask, HTML, SASS, Jinja2
+            .column
+              .card
+                .card-image
+                  figure.image.is-4by3
+                    img(src='https://files.catbox.moe/q3odw0.png' alt='Placeholder image')
+                .card-content
+                  .media
+                    .media-content
+                      p.title.is-4 Password De-Hasher
+                      p.subtitle.is-6 Python
+            .column
+              .card
+                .card-image
+                  figure.image.is-4by3
+                    img(src='https://files.catbox.moe/yfttti.png' alt='Placeholder image')
+                .card-content
+                  .media
+                    .media-content
+                      p.title.is-4 Backup Script
+                      p.subtitle.is-6 Bash
+
+    section.hero.is-medium.is-info#about
+      .hero-body
+        .container
+          h1.title
+            | About Myself 😎
+          h3.subtitle
+            | I am a front end software developer located in Charlotte, North Carolina. I attended University at The University of Central Florida. Outside of software I am interested in football and golf.
+
+    section.hero.is-medium.is-primary#contact
+      .hero-body
+        .container
+          h1.title
+            | Contact Me ✉️
+          h4.subtitle.is-4 
+            i.fa.fa-github(aria-hidden='true')
+            a(href='https://github.com/ryanshill')  GitHub
+          h4.subtitle.is-4
+            i.fa.fa-linkedin-square(aria-hidden='true') 
+            a(href='https://www.linkedin.com/in/ryan-shillingford-826410ab/')  Linkedin
+          h4.subtitle.is-4
+            i.fa.fa-envelope(aria-hidden='true')
+            a(href='mailto:ryanshill@hotmail.com')  Email
